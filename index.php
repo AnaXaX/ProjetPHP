@@ -10,16 +10,27 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!--CSS bootStrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--font 
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'> </head>
 -->
 </head>
 
 <body>
-<h1>Hello World<small> Projet de Badouch & Bamhamad & Kadiri</small></h1>
-
+    <?php
+        require('navbar.php');
+    ?>
+    
+    
+    
+    
+    
+    
+    
     <!--  jQuery  -->
     <script src="js/jquery.min.js"></script>
+    <!--  Tether  -->
+    <script src="js/tether.min.js"></script>
     <!-- bootstrap -->
     <script src="js/bootstrap.min.js"></script>
 </body>
