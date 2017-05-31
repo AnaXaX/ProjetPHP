@@ -15,21 +15,17 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'> </head>
 -->
 </head>
-
 <body>
 
     <?php
         require("navbar.php");
     ?>
+
+        
     
+    
+        <script src="js/jquery.min.js"></script>
 
-
-
-
-
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 </body>
-
 </html>
