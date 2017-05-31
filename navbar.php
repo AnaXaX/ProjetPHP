@@ -1,6 +1,6 @@
 <div class="row">
 <!-- Menu Réduit Changement -->
-<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation" style="z-index:1;">
     <div class="container">
         <!-- container-fluid -->
         <!-- bouton resized -->
