@@ -26,14 +26,18 @@ $count = mysqli_num_rows($result);
 /*Testi wach kayn ou 7él session*/
 if ($count == 1){
 session_start();
+    
+/*$_sessions will be used mbé3d*/
+while( $row = $result->fetch_assoc()) {  
+    $_SESSION['nom'] = $row['NOM'];
+    $_SESSION['prenom'] = $row['PRENOM'];
+}
+
 $_SESSION['mail'] = $mail;
+$_SESSION['user'] = $user;
 header('Location: index.php');
 }else{
 $fmsg = "Invalid Login Credentials.";
 echo $fmsg;
 }
-
-
 ?>
-
-

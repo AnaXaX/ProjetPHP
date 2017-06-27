@@ -2,8 +2,8 @@
 /* Nom de SGBD :  MySQL 5.0                                     */
 /* Date de création :  26/05/2017 17:54:06                      */
 /*==============================================================*/
-create database x;
-use x;
+create database projet;
+use projet;
 
 drop table if exists ABSENCE;
 
@@ -132,7 +132,7 @@ create table ETUDIANT
    PWD                  longtext,
    NOM_ETU              longtext,
    PRENOM_ETU           longtext,
-   DATE_NAISS_ETU       longtext,
+   DATE_NAISS_ETU       date,
    LIEU_NAISS_ETU       longtext,
    VILLE_ETU            longtext,
    QUARTIER_ETU         longtext,
@@ -212,6 +212,24 @@ create table SUIVRE
    ID_USER              bigint not null,
    ID_PARENT            bigint not null,
    primary key (ETU_ID_USER, ID_ETU, ID_USER, ID_PARENT)
+);
+
+/*==============================================================*/
+/* Table : demandeAjout                                                 */
+/*==============================================================*/
+create table demandeajout
+(
+    nomEtu longtext,
+    prenomEtu longtext,
+    date date,
+    sexe longtext,
+    adresse longtext,
+    pays longtext,
+    region longtext,
+    codePostal bigint,
+    prenomParent longtext,
+    nomParent longtext,
+    numeroTel bigint
 );
 
 alter table ABSENCE add constraint FK_ABSENT foreign key (ID_CLASSSE)
